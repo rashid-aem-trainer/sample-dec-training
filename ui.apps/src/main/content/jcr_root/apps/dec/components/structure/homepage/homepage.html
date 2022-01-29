@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>${pageProperties.jcr:title}</title>
+    </head>
+    <body>
+		<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+			<sly data-sly-call="${clientLib.css @categories='dec.base'}">
+			</sly>
+		</sly>
+    	<sly data-sly-include="/libs/wcm/core/components/init/init.jsp"></sly>
+    	<sly data-sly-resource="${@path='responsivegrid', resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+    </body>
+</html>
